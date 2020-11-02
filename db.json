@@ -1,0 +1,126 @@
+{
+  "brutos": [
+    {
+      "nombre": "archivo parque sarmiento",
+      "clave": "sarmiento",
+      "clave2": "limpieza",
+      "ubicacion": "oficial",
+      "link": "https://mail.google.com/mail/u/0/#inbox",
+      "id": 1
+    },
+    {
+      "nombre": "archivo cpc norte",
+      "clave": "cpc",
+      "clave2": "pintar",
+      "ubicacion": "muni",
+      "link": "https://www.mastersocios.com.ar/Consultas/ConsumosDelMes",
+      "id": 2
+    },
+    {
+      "nombre": "a",
+      "clave": "a",
+      "clave2": "a",
+      "ubicacion": "a",
+      "link": "a",
+      "id": 3
+    },
+    {
+      "nombre": "a",
+      "clave": "a",
+      "clave2": "a",
+      "ubicacion": "a",
+      "link": "a",
+      "id": 4
+    },
+    {
+      "nombre": "a",
+      "clave": "a",
+      "clave2": "a",
+      "ubicacion": "a",
+      "link": "a",
+      "id": 5
+    },
+    {
+      "nombre": "a",
+      "clave": "a",
+      "clave2": "a",
+      "ubicacion": "a",
+      "link": "a",
+      "id": 6
+    },
+    {
+      "nombre": "a",
+      "clave": "a",
+      "clave2": "a",
+      "ubicacion": "a",
+      "link": "a",
+      "id": 7
+    },
+    {
+      "nombre": "cpc arguello",
+      "clave": "limpieza",
+      "clave2": "rio",
+      "ubicacion": "mega 4",
+      "link": "https://getbootstrap.com/docs/4.5/components/navbar/",
+      "id": 8
+    },
+    {
+      "nombre": "tequila",
+      "clave": "a",
+      "clave2": "a",
+      "ubicacion": "mega 4",
+      "link": "https://getbootstrap.com/docs/4.5/components/navbar/",
+      "id": 9
+    },
+    {
+      "nombre": "tequila",
+      "clave": "limpieza",
+      "clave2": "rio",
+      "ubicacion": "a",
+      "link": "https://getbootstrap.com/docs/4.5/components/navbar/",
+      "id": 10
+    },
+    {
+      "nombre": "tequila",
+      "clave": "limpieza",
+      "clave2": "rio",
+      "ubicacion": "a",
+      "link": "https://getbootstrap.com/docs/4.5/components/navbar/",
+      "id": 11
+    },
+    {
+      "nombre": "agua",
+      "clave": "mas agua",
+      "clave2": "rio",
+      "ubicacion": "muy cerca",
+      "link": "https://getbootstrap.com/docs/4.5/components/navbar/",
+      "id": 12
+    },
+    {
+      "nombre": "matias",
+      "clave": "limpieza",
+      "clave2": "rio",
+      "ubicacion": "mega 4",
+      "link": "https://getbootstrap.com/docs/4.5/components/navbar/",
+      "id": 13
+    },
+    {
+      "nombre": "PEPE",
+      "clave": "FSFSDFGSGF",
+      "clave2": "GFDGGD",
+      "ubicacion": "FDGDFG",
+      "link": "https://getbootstrap.com/docs/4.5/components/navbar/",
+      "id": 14
+    },
+    {
+      "nombre": "parque sarmiento",
+      "fecha": "11/06/84",
+      "clave": "saneamiento",
+      "clave2": "LLarllora",
+      "ubicacion": "mega 4",
+      "linkBruto": "https://www.tutofox.com/react/react-js-buscador-de-un-objeto-o-un-array/",
+      "linkExportado": "https://getbootstrap.com/docs/4.5/components/alerts/",
+      "id": 15
+    }
+  ]
+}
