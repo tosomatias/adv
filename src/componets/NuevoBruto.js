@@ -58,7 +58,7 @@ const  NuevoBruto = () => {
     return (  
         <Fragment>
             <Body>
-                <div className="row justify-content-center ">
+                <div className="row justify-content-center  ">
                     <div className="col-md-8">
                         <div className="card">
                             <div className="card-body">
@@ -73,7 +73,7 @@ const  NuevoBruto = () => {
                                         <input 
                                             type='text'
                                             name='nombre'
-                                            className="form-control"
+                                            className="form-control nuevo-post"
                                             value={nombre}
                                             onChange = {e => guardarNombre(e.target.value)}
                                         />
@@ -83,7 +83,7 @@ const  NuevoBruto = () => {
                                         <input 
                                             type='text'
                                             name='fecha'
-                                            className="form-control"
+                                            className="form-control "
                                             value={fecha}
                                             onChange = {e => guardarFecha(e.target.value)}
                                         />

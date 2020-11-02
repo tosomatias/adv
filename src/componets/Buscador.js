@@ -1,7 +1,9 @@
 import React,{Fragment, useEffect,useState} from 'react';
 import {useDispatch,useSelector} from 'react-redux';
 import {obtenerBrutosAction} from '../actions/brutosActions';
+import Spinner from './Spinner';
 
+import Bruto from './Bruto';
 
 
 
@@ -44,17 +46,15 @@ const Buscador = () => {
             return bruto.clave === buscar 
             
         });
-        guardarConsulta(respuesta);
+        setTimeout(() => {
+            <Spinner />
+            guardarConsulta(respuesta);
+        }, 3000);
+        
         
     };
     
-  console.log(consultas);
     
-    
-
-    
-    
-
 
     return (  
         <Fragment>
@@ -83,7 +83,19 @@ const Buscador = () => {
                                         className="btn btn-primary font-weight-bold text-uppercase d-block w-100"
                                     >Buscar Informacion</button>
                             </form>
+                            <div className=' mt-5'>
+                                
+                                {consultas.length === 0 ? null : (
+                                    consultas.map(consulta => (
+                                        <Bruto 
+                                            key = {consulta.id}
+                                            consulta = {consulta}
+                                        />
 
+                                    ))
+                                    
+                                )}
+                            </div>
                 
                         
                         </div>

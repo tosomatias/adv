@@ -121,6 +121,16 @@
       "linkBruto": "https://www.tutofox.com/react/react-js-buscador-de-un-objeto-o-un-array/",
       "linkExportado": "https://getbootstrap.com/docs/4.5/components/alerts/",
       "id": 15
+    },
+    {
+      "nombre": "rio suquia",
+      "fecha": "11/06/84",
+      "clave": "rio",
+      "clave2": "llallora",
+      "ubicacion": "muy cerca",
+      "linkBruto": "https://mail.google.com/mail/u/0/#inbox",
+      "linkExportado": "https://github.com/tosomatias/adv",
+      "id": 16
     }
   ]
 }
