@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 
 
 const Img = styled.img`
-    width:300px; 
+    width:550px; 
     height:350px;
     background-size: cover;
     background-position: center center;
@@ -24,16 +24,10 @@ const Inicio = () => {
         <Fragment>
         
             <div className="container">
-                <div className="row">
-                    <div className="col">
-                        <Img src={jumbotrom} alta='fondo' />
-                    </div>
-                    <div className="col">
-                        <h1 className='mt-5'>Pauliz</h1>
-                        <br></br>
-                        <h1>               Lafforgue</h1>
-                    </div>
-                </div> 
+                
+                <Img src={jumbotrom} alta='fondo' />
+                    
+                
             </div>
             
             

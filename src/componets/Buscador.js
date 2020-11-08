@@ -1,7 +1,8 @@
 import React,{Fragment, useEffect,useState} from 'react';
 import {useDispatch,useSelector} from 'react-redux';
 import {obtenerBrutosAction} from '../actions/brutosActions';
-import Spinner from './Spinner';
+
+
 
 import Bruto from './Bruto';
 
@@ -11,14 +12,16 @@ import Bruto from './Bruto';
 import Swal from 'sweetalert2';
 
 
+
+
 const Buscador = () => {
 
     const dispatch = useDispatch();
     const [buscar,guardarBusqueda] = useState('');
     const [consultas,guardarConsulta] = useState([]);
     
+   
 
-    
 
 
     useEffect(() => {
@@ -40,19 +43,17 @@ const Buscador = () => {
                 icon: 'error',
                 title: 'Todos los Campos son Obligatorios',
             });
-        }
-    
+        };
+        
+        
         const respuesta = brutos.filter(bruto => {
-            return bruto.clave === buscar 
+            return (bruto.nombre.trim() === buscar.trim()||bruto.fecha === buscar ||  bruto.clave.trim() === buscar.trim()||bruto.clave2.trim() === buscar.trim() ||bruto.ubicacion.trim() === buscar.trim()  )
             
         });
-        setTimeout(() => {
-            <Spinner />
-            guardarConsulta(respuesta);
-        }, 3000);
-        
+        guardarConsulta(respuesta);
         
     };
+
     
     
 
@@ -62,7 +63,7 @@ const Buscador = () => {
                 <div className="col-md-8">
                     <div className="card">
                         <div className="card-body">
-                            <h2 className="text-center mb-4 font-weight-bold">
+                            <h2 className="text-center mb-4  font-weight-bold">
                                 Buscar informacion
                             </h2>
                             <form

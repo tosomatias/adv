@@ -5,6 +5,13 @@ import {
     COMENZAR_DESCARGA_BRUTOS,
     DESCARGA_BRUTOS_EXITO,
     DESCARGA_BRUTOS_ERROR,
+    OBTENER_BRUTO_ELIMINAR,
+    BRUTO_ELIMINADO_EXITO,
+    BRUTO_ELIMINADO_ERROR,
+    OBTENER_BRUTO_EDITAR,
+    COMENZAR_EDICION_BRUTO,
+    BRUTO_EDITADO_EXITO,
+    BRUTO_EDITADO_ERROR
 } from '../types';
 import Swal from 'sweetalert2';
 
@@ -71,5 +78,80 @@ const descargarBrutosExito = brutos => ({
 });
 const descargarBrutosError = () => ({
     type:DESCARGA_BRUTOS_ERROR,
+    payload:true
+});
+
+
+export function borrarBrutoAction(id){
+    return async(dispatch) => {
+        dispatch(obtenerBrutoEliminar(id));
+
+        try {
+            await InformacionAxios.delete(`/brutos/${id}`);
+            dispatch(brutoEliminadoExito());
+            Swal.fire(
+                'Eliminado',
+                'Su informacion fue eliminada',
+                'success'
+            )
+            
+        } catch (error) {
+            console.log(error);
+            dispatch(brutoEliminadoError);
+            
+        }
+    }
+};
+
+
+const obtenerBrutoEliminar= (id) => ({
+    type:OBTENER_BRUTO_ELIMINAR,
+    payload:id
+});
+const brutoEliminadoExito = () => ({
+    type:BRUTO_ELIMINADO_EXITO,
+
+});
+const brutoEliminadoError  = () => ({
+    type:BRUTO_ELIMINADO_ERROR,
+    payload:true
+});
+
+export function obtenerBrutoEditar (bruto){
+    return (dispatch) => {
+        dispatch(obtenerBrutoAction(bruto));
+    }
+};
+const obtenerBrutoAction = (bruto) => ({
+    type:OBTENER_BRUTO_EDITAR,
+    payload:bruto
+});
+
+export function editarBrutoAction(bruto) {
+    return async(dispatch) => {
+        dispatch(comenzarRdicionBruto());
+
+        try {
+            await InformacionAxios.put(`/brutos/${bruto.id}`,bruto);
+            
+            dispatch(brutoEditadoExito(bruto));
+        } catch (error) {
+            console.log(error);
+            dispatch(brutoEditadoError());
+            
+        }
+    }
+};
+
+const comenzarRdicionBruto = () =>({
+    type:COMENZAR_EDICION_BRUTO,
+
+});
+const brutoEditadoExito = bruto => ({
+    type:BRUTO_EDITADO_EXITO,
+    payload:bruto
+});
+const brutoEditadoError= () => ({
+    type:BRUTO_EDITADO_ERROR,
     payload:true
 });
